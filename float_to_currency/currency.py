@@ -43,4 +43,6 @@ def currency_converter(amount):
 
 
 if __name__ == "__main__":
-    currency_converter(float(input("How much money are you converting? ")))
+    submitted_amount = input("How much money are you converting? ")
+    submitted_amount = submitted_amount.replace("$","").replace(" ","")
+    currency_converter(float(submitted_amount))
