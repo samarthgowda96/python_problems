@@ -1,4 +1,5 @@
 def move_zeroes(list):
+    #use bubble sort algorithm to mutate the list in-place
     n = len(list)
     for i in range(n):
         for j in range(0,n-i-1):
