@@ -1,3 +1,3 @@
-# python_problems
+# Python Problems
 
-This repository contains algorithm problems that I have solved during my time at Byte Academy. All of my solutions are in Python. 
+This repository contains algorithm problems. The initial directories are the sources for the problems, and each sub-directory is the title of the problem. All of my solutions are in Python. 
