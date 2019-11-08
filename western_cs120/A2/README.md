@@ -48,10 +48,40 @@ world = [city1, city2, city3, ...]
 To make your life easier, I’ve provided a function called `set_up_cities` that will generate some cities, with a randomly generated enemy control network between them, for you. If you call this function, it returns a _list_ of cities, detailing the state of your simulated world. You’d use the function like this:
 
 ```python3
-my_world = set_up_cities()
+>>> my_world = set_up_cities()
 ```
 
 > ### Note:
 > If you don’t want to stick to the default names for the cities, note that there is an optional `name` parameter for this function. This lets you pass in your own list of city names if you want to (this also allows you to create a world with fewer, or more, cities). For the last part of the assignment, however, you will need to use a particular list of city names accessed by the function `get_read_world()` (not actually the real world).
 
 You should probably load up `A2.py` in your interpreter right now and play around with the `set_up_cities()` function just to get a feel for it. Have a look at the lists it generates and make sure you understand their structure.
+
+## Coding, Part I
+Write the following functions:
+
+1. `regain(world, cityno)`. This function takes your world (list of cities) as the parameter world and an integer `cityno` specifying which city in the list has been regained from the enemy. So, to have city 2 be regained, you might use the function like this:
+
+```python3
+>>> my_world = set_up_cities()
+>>> regain(my_world, 2)
+```
+
+How do you “regain” a city? Well you have to set the “regained flag” for that city to `True`. In other words, set `world[cityno][1]` to `True`. The `[cityno]` indexes a particular city in the list of cities (`world`) and the following `[1]` indexes the second element (remember, the first element is `[0]`!) in the list that makes up that city description.
+
+2. `lose(world, cityno)`. The opposite of `regain`. Clear the regained flag for the city.
+
+3. `sim_step(world, p_regain, p_lose)`. This is the most important function in the assignment. This function will execute a single time step of your simulation. Depending on how fast you want to think of the operation continuing, that time step could be a day, an hour, a week, whatever. If you were modelling a real operation, you’d determine the size of your time step from some empirical data. Here is some English-language “pseudocode” for function. You’ll have to turn it into Python:
+
+```
+for each city in world:
+
+  if the city is lost and numpy.random.rand() < p_regain:
+    regain the city!
+
+  if the city is lost and numpy.random.rand() < p_lose
+    randomly choose a *different* city connected along the enemy network (neighbouring cities)
+     (hint: use numpy.random.randint() and get_cityno() or is_connected())
+    lose the city!
+
+Make sure that city 0 is *always* regained (our stronghold). It can't be lost.
+```
