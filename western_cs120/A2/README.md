@@ -85,3 +85,28 @@ for each city in world:
 
 Make sure that city 0 is *always* regained (our stronghold). It can't be lost.
 ```
+
+So, what’s going on there? Well, `numpy.random.rand()` isn’t so much pseudocode as actual Python code. It generates a random number between 0 and 1 every time you call it. Think of it like rolling dice. The parameter `p_regain` is the _probability of regaining control of the city_, and the parameter `p_lose` is the _probability of losing a city to the enemy_. For starters use values of 0.5 for `p_regain` and 0.0 for `p_lose` while you’re getting things working. We’ll play with these later.
+
+Once you’ve done this, you now have a working Operation Save the World simulator! So spend some time testing it in the Python interpreter. Something like this:
+
+```python3
+>>> my_world = set_up_cities()
+>>> regain(my_world,0)
+>>> draw_world(my_world)
+>>> sim_step(my_world, 0.5, 0)
+>>> draw_world(my_world)
+>>> sim_step(my_world,0.5, 0)
+>>> draw_world(my_world)
+>>> sim_step(my_world, 0.5, 0)
+```
+
+The function `draw_world()` is one that’s already written for you. It graphically displays the state of your world. Cities are green circles if they are regained and red circles if they’re lost. If the enemy network connects two cities, there is a line drawn between the cities. If you update this display after each `sim_step` you can watch the operation happen! It’ll look something like this:
+
+![graph](graph.png)
+
+If you get tired of typing `sim_step` for every single step…you could always automate the process with a function that calls `sim_step` in a loop!
+
+Once you’re convinced that your operation simulator works, move on to Part 2. If your simulator isn’t working yet __GET IT WORKING BEFORE PROCEEDING__.
+
+Working now? Good. Make sure it’s _commented_ and has _function headers_.
