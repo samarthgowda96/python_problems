@@ -110,3 +110,98 @@ If you get tired of typing `sim_step` for every single step…you could always a
 Once you’re convinced that your operation simulator works, move on to Part 2. If your simulator isn’t working yet __GET IT WORKING BEFORE PROCEEDING__.
 
 Working now? Good. Make sure it’s _commented_ and has _function headers_.
+
+## Coding, Part II
+
+As fun as it is to watch our operation being carried out, we’d like to gather some hard data on the results of our simulations. In particular, the leaders of the resistance force want to know how long it will take to regain all the cities in the world.
+
+Write the following functions:
+
+4. `is_world_saved(world)`. Loop through all the cities in the list world. If all of them are regained, return `True` (victory!). Otherwise, return `False`.
+
+5. `time_to_save_world(world, p_regain, p_lose)`. Run a simulation, for specific values of `p_regain` and `p_lose` and count how long it takes to save the world (which you can now test with `is_world_saved`, of course). Some pseudocode for you:
+
+```
+reset the world (all cities are lost except city 0)
+
+initialize a "regained-world" counter
+
+     while the world hasn't been regained:
+        sim_step(world, p_regain, p_lose)
+        increment the regained-world counter
+
+    return the value of the regained-world counter
+```
+
+Now, after we have set up a world using
+
+```
+>>> my_world = set_up_cities()
+```
+
+to run an experiment to see how long it takes to save the world, all we have to do is:
+
+```
+>>> time_to_save_world(my_world,0.5,0)
+```
+
+We’ve got a problem though. Our simulation is _stochastic_: we are making use of random numbers to determine outcomes. We can’t just run our simulation once and count the number of steps until every city is regained. If you don’t believe me, just try it. Call the `time_to_save_world` function a few times. Do you get different values? Wildly different? Yeah.
+
+We have to run our simulation _many times_ to fairly sample the space of possible outcomes. In essence, simulation is a lot like experimentation; we have to do multiple experiments to get some statistical confidence in our answer.
+
+So, write another function:
+
+6. `save_world_many_times(world, n, p_regain, p_lose)`. This function should initialize a 
+_list_ of results and then use a loop to run `time_to_save_world(world, p_regain, p_lose)` a total of `n` times. After each simulation, add the time it took to save the world to the list. Return a list of `n` “times to save the world”.
+
+All set? Make sure it’s _commented_ and has _function headers_. Then go on to the analysis.
+
+## Analysis
+
+Now we get to play with our simulator to answer important strategic questions about our operations. Play with the values of `p_regain` and `p_lose`. How does changing those values change the “time to save the world”? Answer the following specific questions, and provide evidence from your simulation to support your answer:
+
+1. Fix the value of `p_lose` at zero. How does varying the value of `p_regain` affect the time to save the world?
+
+2. Fix the value of `p_lose` at 0.1. How does varying the value of `p_regain` affect the time to save the world?
+
+3. Fix the value of `p_regain` at 0.5. How does varying the value of `p_lose` affect the time to save the world?
+
+4. Pick three pairs of `p_regain` and `p_lose` values that you think are interesting. Run 500 simulations for them (e.g, `save_world_many_times(world, 500, your_value, your_value)`. What does the _distribution_ of times to save the world look like? If you’ve taken a stats course: is it normal (Gaussian)? (If you haven’t taken stats, just ignore that question).
+
+> ### Big Hint
+> If you ran this command in the Python interpreter: `ttl = save_world_many_times(world, 500, your_value, your_value)`, you can get a really pretty _histogram_ (which tells you about the distribution) of the values in `ttl` with the matplotlib function `hist`.
+
+Here’s a sample histogram of times to the end of the world for `p_regain = 0.5` and `p_lose = 0.0`:
+
+![histogram](histogram.png)
+
+ If you’re running ipython from the Mac/Linux command line, you may have to run it like this to get the graphics to work:
+
+```shell
+$ ipython --pylab
+```
+
+5. Suppose that you have received some intel on the enemy network and you want to use this to plan your operation. This city network is returned by the `get_real_world()` function (already written for you). Also suppose that the time step is counted in months. If the value of `p_lose` is 0.9 (90% probably of losing a city in a given month), then approximately what probability of regaining a city (value of `p_regain`) must we guarantee to save the world within 2 years? __Justify your answer__ (_pictures may help_)
+
+__Note Well__: CS 2120 and DH 2220 students should get the value to _1 significant figure_ (one correct digit after the decimal point). CS 9642 students should get the value to _3 significant figures_ (this will require more runs).
+
+> ### Hint
+> You will need to do a large number of runs to get an accurate answer (around 10 000 should do for 1 sigfig). But this can take some time. So, you can start with a small number of runs to get a good rough guess, and then increase the number of runs to get more precision.
+
+## What to submit
+- Copy and paste the contents of your version of A2.py into the text box supplied on OWL.
+    - Make sure your __NAME__ and __STUDENT NUMBER__ appear in a comment at the top of the program (the script `A2_check.py` will also prompt you to do this).
+    - Make sure it’s _commented_ and has _function headers_!!
+    - List __anyone you worked with__ in the comments, too.
+- A text file answering the 5 analysis questions and providing _data_ to back up your answers.
+- (Optional) A pdf file containing any images (histograms) you might want to include. Please include a brief description of each image inside the pdf.
+
+## Some hints
+
+- Work on one function at a time.
+
+- Get each function working perfectly before you go on to the next one.
+
+- _Test_ each function as you write it.
+
+    - This is a really nice thing about Python: you can call your function right from the interpreter prompt and see what result gets returned. Does it look reasonable? Good! Check it!
