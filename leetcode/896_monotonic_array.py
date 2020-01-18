@@ -34,7 +34,7 @@ from collections import OrderedDict
 
 
 class Solution:
-    def isMonotonic(self, A: List[int]) -> bool:
+    def isMonotonic(self, A: [int]) -> bool:
         unique = list(OrderedDict.fromkeys(A))
 
         if len(unique) == 1:

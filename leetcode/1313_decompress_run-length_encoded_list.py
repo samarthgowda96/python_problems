@@ -22,7 +22,7 @@ nums.length % 2 == 0
 
 
 class Solution:
-    def decompressRLElist(self, nums: List[int]) -> List[int]:
+    def decompressRLElist(self, nums: [int]) -> [int]:
         my_list = []
         half_list = int(len(nums) / 2)
         freq = nums[::2]
