@@ -23,7 +23,7 @@ import collections
 
 
 class Solution:
-    def uniqueOccurrences(self, arr: List[int]) -> bool:
+    def uniqueOccurrences(self, arr: [int]) -> bool:
         counts = []
         c = collections.Counter(arr)
         for number in c:
