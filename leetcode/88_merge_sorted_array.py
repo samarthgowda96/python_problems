@@ -23,7 +23,7 @@ class Solution:
         nums1.sort()
 
 
-'''Submissions
+'''Submission
 Runtime: 48 ms, faster than 28.49% of Python3 online submissions for Merge Sorted Array.
 Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Merge Sorted Array.
 '''
