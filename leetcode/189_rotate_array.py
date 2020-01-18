@@ -23,7 +23,7 @@ Could you do it in-place with O(1) extra space?
 
 
 class Solution:
-    def rotate(self, nums: List[int], k: int) -> None:
+    def rotate(self, nums: [int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
