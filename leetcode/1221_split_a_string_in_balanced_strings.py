@@ -30,6 +30,9 @@ Constraints:
 s[i] = 'L' or 'R' '''
 
 
+# solved two different ways
+# first solution
+
 import collections
 
 
@@ -46,6 +49,27 @@ class Solution:
         return ans
 
 
-'''Submission
+'''Submission one
 Runtime: 112 ms, faster than 6.08% of Python3 online submissions for Split a String in Balanced Strings.
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Split a String in Balanced Strings.'''
+
+
+# second solution
+class SolutionTwo:
+    def balancedStringSplit(self, s: str) -> int:
+        right = 0
+        left = 0
+        ans = 0
+        for i in range(len(s)):
+            if s[i] == 'R':
+                right += 1
+            else:
+                left += 1
+            if right == left:
+                ans += 1
+        return ans
+
+
+'''Submission two
+Runtime: 24 ms, faster than 88.79% of Python3 online submissions for Split a String in Balanced Strings.
 Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Split a String in Balanced Strings.'''
