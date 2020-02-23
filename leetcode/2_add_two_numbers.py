@@ -53,6 +53,51 @@ class Solution:
         return final.next
 
 
-'''Submission
+'''Submission 1
 Runtime: 76 ms, faster than 30.02% of Python3 online submissions for Add Two Numbers.
 Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Add Two Numbers.'''
+
+
+class Solution2:
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        if not l1:
+            return l2
+        if not l2:
+            return l1
+
+        ans = ListNode(-1)
+        final = ans
+        carry = 0
+
+        a = l1
+        b = l2
+
+        while a and b:
+            tot_sum = a.val + b.val + carry
+            carry = int(tot_sum / 10)
+            ans.next = ListNode(tot_sum % 10)
+            a = a.next
+            b = b.next
+            ans = ans.next
+        if not a:
+            while b:
+                tot_sum = b.val + carry
+                carry = int(tot_sum / 10)
+                ans.next = ListNode(tot_sum % 10)
+                b = b.next
+                ans = ans.next
+        if not b:
+            while a:
+                tot_sum = a.val + carry
+                carry = int(tot_sum / 10)
+                ans.next = ListNode(tot_sum % 10)
+                a = a.next
+                ans = ans.next
+        if carry:
+            ans.next = ListNode(carry)
+        return final.next
+
+
+'''Submission 2
+Runtime: 68 ms, faster than 73.86% of Python3 online submissions for Add Two Numbers.
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Add Two Numbers.'''
