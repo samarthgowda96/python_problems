@@ -39,5 +39,5 @@ class Solution:
 
 
 '''Submission
-Runtime: 256 ms, faster than 5.12% of Python3 online submissions for Reverse Vowels of a String.
-Memory Usage: 15.4 MB, less than 30.05% of Python3 online submissions for Reverse Vowels of a String.'''
+Runtime: 184 ms, faster than 6.02% of Python3 online submissions for Reverse Vowels of a String.
+Memory Usage: 15.4 MB, less than 27.92% of Python3 online submissions for Reverse Vowels of a String.'''
