@@ -22,7 +22,7 @@ Would allow duplicates affect the run-time complexity? How and why?'''
 
 
 class Solution:
-    def findMin(self, nums: List[int]) -> int:
+    def findMin(self, nums: [int]) -> int:
         for i in range(len(nums)-1):
             if nums[i] > nums[i+1]:
                 return nums[i+1]
