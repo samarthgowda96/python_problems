@@ -27,3 +27,35 @@ class Solution:
 Runtime: 48 ms, faster than 28.49% of Python3 online submissions for Merge Sorted Array.
 Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Merge Sorted Array.
 '''
+
+
+class Solution2:
+    def merge(self, nums1: [int], m: int, nums2: [int], n: int) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        sort = []
+        i = 0
+        j = 0
+        while i < m and j < n:
+            if nums1[i] <= nums2[j]:
+                sort.append(nums1[i])
+                i += 1
+            else:
+                sort.append(nums2[j])
+                j += 1
+        if i < m:
+            while i < m:
+                sort.append(nums1[i])
+                i += 1
+        if j < n:
+            while j < n:
+                sort.append(nums2[j])
+                j += 1
+        for i in range(len(nums1)):
+            nums1[i] = sort[i]
+
+
+'''Submission
+Runtime: 44 ms, faster than 42.21% of Python3 online submissions for Merge Sorted Array.
+Memory Usage: 13.6 MB, less than 94.57% of Python3 online submissions for Merge Sorted Array.'''
