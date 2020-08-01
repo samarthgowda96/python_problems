@@ -24,7 +24,7 @@ Note:
 
 
 class Solution:
-    def validMountainArray(self, A: List[int]) -> bool:
+    def validMountainArray(self, A: [int]) -> bool:
         if len(A) < 3:
             return False
         dec = False
