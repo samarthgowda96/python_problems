@@ -24,28 +24,34 @@ Note:
 
 
 class Solution:
-    def validMountainArray(self, A: [int]) -> bool:
+    def validMountainArray(self, A: List[int]) -> bool:
         if len(A) < 3:
             return False
-        inc = False
         dec = False
+
+        # check that the array starts by increasing
         if A[0] > A[1]:
             return False
+
         for i in range(len(A) - 1):
+            # not strictly increasing
             if A[i] == A[i+1]:
                 return False
-            elif A[i] < A[i+1] and not dec:
-                inc = True
-            elif inc and A[i] > A[i+1]:
+            # initialize inc bool to be True
+            elif A[i] < A[i+1] and dec:
+                return False
+            # if the array starts decreasing
+            elif A[i] > A[i+1]:
                 dec = True
-            elif inc and dec and A[i] < A[i+1]:
+            # if the array has already decreased, it shouldn't increase again
+            elif dec and A[i] < A[i+1]:
                 return False
 
-        if not inc or not dec:
+        if not dec:
             return False
         return True
 
 
 '''Submission
-Runtime: 352 ms
-Memory: 15.2 MB'''
+Runtime: 432 ms
+Memory: 15 MB'''
