@@ -55,3 +55,28 @@ class Solution:
 '''Submission
 Runtime: 432 ms
 Memory: 15 MB'''
+
+
+class Solution2:
+    def validMountainArray(self, A: [int]) -> bool:
+        n = len(A)
+        i = 0
+
+        # walk up
+        while i+1 < n and A[i] < A[i+1]:
+            i += 1
+
+        # peak can't be first or last
+        if i == 0 or i == n-1:
+            return False
+
+        # walk down
+        while i+1 < n and A[i] > A[i+1]:
+            i += 1
+
+        return i == n-1
+
+
+'''Submission
+Runtime: 212 ms, faster than 92.76% of Python3 online submissions for Valid Mountain Array.
+Memory Usage: 15.1 MB, less than 10.80% of Python3 online submissions for Valid Mountain Array.'''
