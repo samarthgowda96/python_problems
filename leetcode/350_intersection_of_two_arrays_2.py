@@ -1,4 +1,4 @@
-'''350. Intersection of Two Arrays II Description
+"""350. Intersection of Two Arrays II Description
 
 Given two arrays, write a function to compute their intersection.
 
@@ -17,7 +17,7 @@ The result can be in any order.
 Follow up:
 What if the given array is already sorted? How would you optimize your algorithm?
 What if nums1's size is small compared to nums2's size? Which algorithm is better?
-What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?'''
+What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?"""
 
 
 class Solution:
@@ -38,6 +38,6 @@ class Solution:
         return ans
 
 
-'''Submission
+"""Submission
 Runtime: 64 ms, faster than 19.44% of Python3 online submissions for Intersection of Two Arrays II.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Intersection of Two Arrays II.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Intersection of Two Arrays II."""

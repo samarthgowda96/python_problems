@@ -1,4 +1,4 @@
-'''155. Min Stack Description
+"""155. Min Stack Description
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 push(x) -- Push element x onto stack.
@@ -14,7 +14,7 @@ minStack.push(-3);
 minStack.getMin();   --> Returns -3.
 minStack.pop();
 minStack.top();      --> Returns 0.
-minStack.getMin();   --> Returns -2.'''
+minStack.getMin();   --> Returns -2."""
 
 
 class MinStack:
@@ -45,6 +45,6 @@ class MinStack:
 # param_4 = obj.getMin()
 
 
-'''Submission
+"""Submission
 Runtime: 796 ms
-Memory Usage: 17.6 MB'''
+Memory Usage: 17.6 MB"""

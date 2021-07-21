@@ -1,4 +1,4 @@
-'''929. Unique Email Addresses Description
+"""929. Unique Email Addresses Description
 Every email consists of a local name and a domain name, separated by the @ sign.
 
 For example, in alice@leetcode.com, alice is the local name, and leetcode.com is the domain name.
@@ -24,22 +24,22 @@ Note:
 Each emails[i] contains exactly one '@' character.
 All local and domain names are non-empty.
 Local names do not start with a '+' character.
-'''
+"""
 
 
 class Solution:
     def numUniqueEmails(self, emails: [str]) -> int:
         clean = []
         for email in emails:
-            prefix = email.split('@')[0].replace('.', '')
-            domain = email.split('@')[1]
-            if '+' in prefix:
-                prefix = prefix.split('+')[0]
+            prefix = email.split("@")[0].replace(".", "")
+            domain = email.split("@")[1]
+            if "+" in prefix:
+                prefix = prefix.split("+")[0]
             clean.append(prefix + "@" + domain)
 
         return len(list(set(clean)))
 
 
-'''Submission
+"""Submission
 Runtime: 48 ms, faster than 77.16% of Python3 online submissions for Unique Email Addresses.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Unique Email Addresses.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Unique Email Addresses."""

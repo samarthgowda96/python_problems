@@ -1,4 +1,4 @@
-'''1046. Last Stone Weight Description
+"""1046. Last Stone Weight Description
 We have a collection of stones, each stone has a positive integer weight.
 
 Each turn, we choose the two heaviest stones and smash them together.  Suppose the stones have weights x and y with x <= y.
@@ -19,7 +19,7 @@ we combine 1 and 1 to get 0 so the array converts to [1] then that's the value o
 
 Note:
 1 <= stones.length <= 30
-1 <= stones[i] <= 1000'''
+1 <= stones[i] <= 1000"""
 
 
 class Solution:
@@ -41,6 +41,6 @@ class Solution:
         return stones[0]
 
 
-'''Submission
+"""Submission
 Runtime: 24 ms -> beats 93.80% of python3 submissions
-Memory Usage: 13.8 MB'''
+Memory Usage: 13.8 MB"""

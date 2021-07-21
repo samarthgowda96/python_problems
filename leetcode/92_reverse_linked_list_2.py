@@ -1,4 +1,4 @@
-'''92. Reverse Linked List II Description
+"""92. Reverse Linked List II Description
 Reverse a linked list from position m to n. Do it in one-pass.
 
 Note: 1 ≤ m ≤ n ≤ length of list.
@@ -6,7 +6,7 @@ Note: 1 ≤ m ≤ n ≤ length of list.
 Example:
 
 Input: 1->2->3->4->5->NULL, m = 2, n = 4
-Output: 1->4->3->2->5->NULL'''
+Output: 1->4->3->2->5->NULL"""
 
 
 class ListNode:
@@ -22,7 +22,7 @@ class Solution:
         counter = 1
         first = ListNode(0)  # stores section before m
         copy_first = first
-        while (counter != m):
+        while counter != m:
             counter += 1
             first.next = ListNode(head.val)
             head = head.next
@@ -30,7 +30,7 @@ class Solution:
 
         # perform swap
         prev = None
-        for i in range(n-m+1):
+        for i in range(n - m + 1):
             ans_next = head.next
             head.next = prev
             prev = head
@@ -46,6 +46,6 @@ class Solution:
         return final
 
 
-'''Submission
+"""Submission
 Runtime: 24 ms, faster than 92.07% of Python3 online submissions for Reverse Linked List II.
-Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Reverse Linked List II.'''
+Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Reverse Linked List II."""

@@ -1,4 +1,4 @@
-'''485. Max Consecutive Ones Description
+"""485. Max Consecutive Ones Description
 
 Given a binary array, find the maximum number of consecutive 1s in this array.
 
@@ -10,7 +10,7 @@ Explanation: The first two digits or the last three digits are consecutive 1s.
 
 Note:
 The input array will only contain 0 and 1.
-The length of input array is a positive integer and will not exceed 10,000'''
+The length of input array is a positive integer and will not exceed 10,000"""
 
 
 class Solution:
@@ -27,6 +27,6 @@ class Solution:
         return max(counts)
 
 
-'''Description
+"""Description
 Runtime: 388 ms, faster than 50.74% of Python3 online submissions for Max Consecutive Ones.
-Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Max Consecutive Ones.'''
+Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Max Consecutive Ones."""

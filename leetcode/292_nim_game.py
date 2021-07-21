@@ -1,4 +1,4 @@
-'''292. Nim Game Description
+"""292. Nim Game Description
 
 You are playing the following Nim Game with your friend:
     There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones.
@@ -11,7 +11,7 @@ Example:
 Input: 4
 Output: false
 Explanation: If there are 4 stones in the heap, then you will never win the game;
-No matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.'''
+No matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend."""
 
 
 class Solution:
@@ -19,6 +19,6 @@ class Solution:
         return n % 4 != 0
 
 
-'''Submission
+"""Submission
 Runtime: 32 ms, faster than 14.86% of Python3 online submissions for Nim Game.
-Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Nim Game.'''
+Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Nim Game."""

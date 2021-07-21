@@ -1,4 +1,4 @@
-'''26. Remove Duplicates from Sorted Array
+"""26. Remove Duplicates from Sorted Array
 Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 
@@ -23,7 +23,7 @@ int len = removeDuplicates(nums);
 // using the length returned by your function, it prints the first len elements.
 for (int i = 0; i < len; i++) {
     print(nums[i]);
-}'''
+}"""
 
 
 from collections import Counter
@@ -38,6 +38,6 @@ class Solution:
                 c[num] -= 1
 
 
-'''Submission
+"""Submission
 Runtime: 792 ms
-Memory: 16.3 MB'''
+Memory: 16.3 MB"""

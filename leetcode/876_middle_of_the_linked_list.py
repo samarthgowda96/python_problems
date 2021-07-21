@@ -1,4 +1,4 @@
-'''876. Middle of the Linked List Description
+"""876. Middle of the Linked List Description
 Given a non-empty, singly linked list with head node head, return a middle node of linked list.
 
 If there are two middle nodes, return the second middle node.
@@ -16,7 +16,7 @@ Output: Node 4 from this list (Serialization: [4,5,6])
 Since the list has two middle nodes with values 3 and 4, we return the second one.
 
 Note:
-The number of nodes in the given list will be between 1 and 100.'''
+The number of nodes in the given list will be between 1 and 100."""
 
 
 class ListNode:
@@ -43,6 +43,6 @@ class Solution:
             ans = ans.next
 
 
-'''Submission
+"""Submission
 Runtime: 20 ms, faster than 96.01% of Python3 online submissions for Middle of the Linked List.
-Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Middle of the Linked List.'''
+Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Middle of the Linked List."""

@@ -1,4 +1,4 @@
-'''1426. Counting Elements Description
+"""1426. Counting Elements Description
 Given an integer array arr, count element x such that x + 1 is also in arr.
 
 If there're duplicates in arr, count them seperately.
@@ -25,14 +25,14 @@ Explanation: Two 1s are counted cause 2 is in arr.
 
 Constraints:
 1 <= arr.length <= 1000
-0 <= arr[i] <= 1000'''
+0 <= arr[i] <= 1000"""
 
 
 class Solution:
     def countElements(self, arr: [int]) -> int:
         numbers = []
         for num in list(set(arr)):
-            if num+1 in arr:
+            if num + 1 in arr:
                 numbers.append(num)
 
         final = 0
@@ -42,6 +42,6 @@ class Solution:
         return final
 
 
-'''Submission
+"""Submission
 Runtime: 52 ms
-Memory Usage: 14 MB'''
+Memory Usage: 14 MB"""

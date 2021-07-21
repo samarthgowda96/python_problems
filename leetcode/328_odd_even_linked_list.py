@@ -1,4 +1,4 @@
-'''328. Odd Even Linked List Description
+"""328. Odd Even Linked List Description
 Given a singly linked list, group all odd nodes together followed by the even nodes.
 Please note here we are talking about the node number and not the value in the nodes.
 
@@ -14,7 +14,7 @@ Output: 2->3->6->7->1->5->4->NULL
 
 Note:
 The relative order inside both the even and odd groups should remain as it was in the input.
-The first node is considered odd, the second node even and so on ...'''
+The first node is considered odd, the second node even and so on ..."""
 
 
 # Definition for singly-linked list.
@@ -32,7 +32,7 @@ class Solution:
         final2 = even
 
         counter = 1
-        while (head):
+        while head:
             if counter % 2 == 1:
                 odd.next = ListNode(head.val)
                 odd = odd.next
@@ -46,6 +46,6 @@ class Solution:
         return final1.next
 
 
-'''Submission
+"""Submission
 Runtime: 52 ms, faster than 16.93% of Python3 online submissions for Odd Even Linked List.
-Memory Usage: 15.4 MB, less than 8.33% of Python3 online submissions for Odd Even Linked List.'''
+Memory Usage: 15.4 MB, less than 8.33% of Python3 online submissions for Odd Even Linked List."""

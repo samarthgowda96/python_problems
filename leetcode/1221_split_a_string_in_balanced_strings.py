@@ -1,4 +1,4 @@
-'''1221. Split a String in Balanced Strings Description
+"""1221. Split a String in Balanced Strings Description
 Balanced strings are those who have equal quantity of 'L' and 'R' characters.
 
 Given a balanced string s split it in the maximum amount of balanced strings.
@@ -27,7 +27,7 @@ Explanation: s can be split into "RL", "RRRLLRLL", since each substring contains
 
 Constraints:
 1 <= s.length <= 1000
-s[i] = 'L' or 'R' '''
+s[i] = 'L' or 'R' """
 
 
 # solved two different ways
@@ -43,15 +43,15 @@ class Solution:
         for i in range(len(s)):
             substr.append(s[i])
             c = collections.Counter(substr)
-            if c['R'] == c['L']:
+            if c["R"] == c["L"]:
                 ans += 1
                 substr = []
         return ans
 
 
-'''Submission one
+"""Submission one
 Runtime: 112 ms, faster than 6.08% of Python3 online submissions for Split a String in Balanced Strings.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Split a String in Balanced Strings.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Split a String in Balanced Strings."""
 
 
 # second solution
@@ -61,7 +61,7 @@ class SolutionTwo:
         left = 0
         ans = 0
         for i in range(len(s)):
-            if s[i] == 'R':
+            if s[i] == "R":
                 right += 1
             else:
                 left += 1
@@ -70,6 +70,6 @@ class SolutionTwo:
         return ans
 
 
-'''Submission two
+"""Submission two
 Runtime: 24 ms, faster than 88.79% of Python3 online submissions for Split a String in Balanced Strings.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Split a String in Balanced Strings.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Split a String in Balanced Strings."""

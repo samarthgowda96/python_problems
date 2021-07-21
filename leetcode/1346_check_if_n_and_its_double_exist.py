@@ -1,4 +1,4 @@
-'''1346. Check If N and Its Double Exist
+"""1346. Check If N and Its Double Exist
 Given an array arr of integers, check if there exists two integers N and M such that N is the double of M ( i.e. N = 2 * M).
 More formally check if there exists two indices i and j such that :
 - i != j
@@ -22,20 +22,20 @@ Explanation: In this case does not exist N and M, such that N = 2 * M.
 
 Constraints:
 2 <= arr.length <= 500
--10^3 <= arr[i] <= 10^3'''
+-10^3 <= arr[i] <= 10^3"""
 
 
 class Solution:
     def checkIfExist(self, arr: [int]) -> bool:
         for i in range(len(arr)):
-            if arr[i] * 2 in (arr[:i] + arr[i+1:]):
+            if arr[i] * 2 in (arr[:i] + arr[i + 1 :]):
                 return True
             elif arr[i] % 2 == 0:
-                if arr[i] / 2 in (arr[:i] + arr[i+1:]):
+                if arr[i] / 2 in (arr[:i] + arr[i + 1 :]):
                     return True
         return False
 
 
-'''Submission
+"""Submission
 Runtime: 68 ms
-Memory: 14 MB'''
+Memory: 14 MB"""

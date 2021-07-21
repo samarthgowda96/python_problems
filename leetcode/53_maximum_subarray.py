@@ -1,4 +1,4 @@
-'''53. Maximum Subarray Description
+"""53. Maximum Subarray Description
 Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 
 Example:
@@ -7,7 +7,7 @@ Output: 6
 Explanation: [4,-1,2,1] has the largest sum = 6.
 
 Follow up:
-If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.'''
+If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle."""
 
 
 class Solution:
@@ -28,6 +28,6 @@ class Solution:
         return abs_max
 
 
-'''Submission
+"""Submission
 Runtime: 68 ms
-Memory Usage: 14.6 MB'''
+Memory Usage: 14.6 MB"""

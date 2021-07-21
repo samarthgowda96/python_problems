@@ -1,4 +1,4 @@
-'''98. Validate Binary Search Tree Description
+"""98. Validate Binary Search Tree Description
 Given a binary tree, determine if it is a valid binary search tree (BST).
 
 Assume a BST is defined as follows:
@@ -26,7 +26,7 @@ Example 2:
 
 Input: [5,1,4,null,null,3,6]
 Output: false
-Explanation: The root node's value is 5 but its right child's value is 4.'''
+Explanation: The root node's value is 5 but its right child's value is 4."""
 
 
 class TreeNode:
@@ -53,12 +53,12 @@ class Solution:
                 root = root.right
 
         for i in range(len(result) - 1):
-            if result[i] < result[i+1]:
+            if result[i] < result[i + 1]:
                 continue
             return False
         return True
 
 
-'''Submission
+"""Submission
 Runtime: 40 ms, faster than 84.99% of Python3 online submissions for Validate Binary Search Tree.
-Memory Usage: 16.1 MB, less than 22.99% of Python3 online submissions for Validate Binary Search Tree.'''
+Memory Usage: 16.1 MB, less than 22.99% of Python3 online submissions for Validate Binary Search Tree."""

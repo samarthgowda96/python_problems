@@ -1,4 +1,4 @@
-'''961. N-Repeated Element in Size 2N Array Description
+"""961. N-Repeated Element in Size 2N Array Description
 
 In a array A of size 2N, there are N+1 unique elements, and exactly one of these elements is repeated N times.
 
@@ -19,7 +19,7 @@ Output: 5
 Note:
 4 <= A.length <= 10000
 0 <= A[i] < 10000
-A.length is even'''
+A.length is even"""
 
 
 import collections
@@ -33,6 +33,6 @@ class Solution:
                 return number
 
 
-'''Submission
+"""Submission
 Runtime: 236 ms, faster than 31.89% of Python3 online submissions for N-Repeated Element in Size 2N Array.
-Memory Usage: 14 MB, less than 87.76% of Python3 online submissions for N-Repeated Element in Size 2N Array.'''
+Memory Usage: 14 MB, less than 87.76% of Python3 online submissions for N-Repeated Element in Size 2N Array."""

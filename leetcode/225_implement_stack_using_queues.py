@@ -1,4 +1,4 @@
-'''225. Implement Stack using Queues Description
+"""225. Implement Stack using Queues Description
 
 Implement the following operations of a stack using queues.
 
@@ -20,7 +20,7 @@ Notes:
 You must use only standard operations of a queue -- which means only push to back, peek/pop from front, size, and is empty operations are valid.
 Depending on your language, queue may not be supported natively.
 You may simulate a queue by using a list or deque (double-ended queue), as long as you use only standard operations of a queue.
-You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack).'''
+You may assume that all operations are valid (for example, no pop or top operations will be called on an empty stack)."""
 
 
 from collections import deque
@@ -79,6 +79,6 @@ class MyStack:
 # param_4 = obj.empty()
 
 
-'''Submission
+"""Submission
 Runtime: 28 ms, faster than 56.10% of Python3 online submissions for Implement Stack using Queues.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Implement Stack using Queues.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Implement Stack using Queues."""

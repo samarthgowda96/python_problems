@@ -1,4 +1,4 @@
-'''283. Move Zeroes Description
+"""283. Move Zeroes Description
 Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
 Example:
@@ -7,7 +7,7 @@ Output: [1,3,12,0,0]
 
 Note:
 You must do this in-place without making a copy of the array.
-Minimize the total number of operations.'''
+Minimize the total number of operations."""
 
 
 class Solution:
@@ -26,6 +26,6 @@ class Solution:
         return nums
 
 
-'''Submission
+"""Submission
 Runtime: 120 ms
-Memory Usage: 15.2 MB'''
+Memory Usage: 15.2 MB"""

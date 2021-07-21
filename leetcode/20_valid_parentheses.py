@@ -1,4 +1,4 @@
-'''20. Valid Parentheses Description
+"""20. Valid Parentheses Description
 Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
 
 An input string is valid if:
@@ -25,7 +25,7 @@ Output: false
 
 Example 5:
 Input: "{[]}"
-Output: true'''
+Output: true"""
 
 
 from collections import deque
@@ -55,6 +55,6 @@ class Solution:
         return True
 
 
-'''Submission
+"""Submission
 Runtime: 28 ms, faster than 71.52% of Python3 online submissions for Valid Parentheses.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Valid Parentheses.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Valid Parentheses."""

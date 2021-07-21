@@ -1,4 +1,4 @@
-'''88. Merge Sorted Array Description
+"""88. Merge Sorted Array Description
 Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
 
 Note:
@@ -11,7 +11,7 @@ nums1 = [1,2,3,0,0,0], m = 3
 nums2 = [2,5,6],       n = 3
 
 Output: [1,2,2,3,5,6]
-'''
+"""
 
 
 class Solution:
@@ -23,10 +23,10 @@ class Solution:
         nums1.sort()
 
 
-'''Submission
+"""Submission
 Runtime: 48 ms, faster than 28.49% of Python3 online submissions for Merge Sorted Array.
 Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Merge Sorted Array.
-'''
+"""
 
 
 class Solution2:
@@ -56,6 +56,6 @@ class Solution2:
             nums1[i] = sort[i]
 
 
-'''Submission
+"""Submission
 Runtime: 44 ms, faster than 42.21% of Python3 online submissions for Merge Sorted Array.
-Memory Usage: 13.6 MB, less than 94.57% of Python3 online submissions for Merge Sorted Array.'''
+Memory Usage: 13.6 MB, less than 94.57% of Python3 online submissions for Merge Sorted Array."""

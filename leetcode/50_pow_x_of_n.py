@@ -1,4 +1,4 @@
-'''50. Pow(x, n) Description
+"""50. Pow(x, n) Description
 Implement pow(x, n), which calculates x raised to the power n (x^n).
 
 Example 1:
@@ -18,7 +18,8 @@ Note:
 
 -100.0 < x < 100.0
 n is a 32-bit signed integer, within the range [−2^31, 2^31 − 1]
-'''
+"""
+
 
 class Solution:
     def myPow(self, x, n):
@@ -27,9 +28,10 @@ class Solution:
         :type n: int
         :rtype: float
         """
-        return x**n
+        return x ** n
 
-'''Submissions
+
+"""Submissions
 Runtime: 32 ms, faster than 69.53% of Python3 online submissions for Pow(x, n).
 Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Pow(x, n).
-'''
+"""

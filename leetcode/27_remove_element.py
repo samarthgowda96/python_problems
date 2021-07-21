@@ -1,4 +1,4 @@
-'''27. Remove Element
+"""27. Remove Element
 Given an array nums and a value val, remove all instances of that value in-place and return the new length.
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 The order of elements can be changed. It doesn't matter what you leave beyond the new length.
@@ -25,7 +25,7 @@ int len = removeElement(nums, val);
 // using the length returned by your function, it prints the first len elements.
 for (int i = 0; i < len; i++) {
     print(nums[i]);
-}'''
+}"""
 
 
 class Solution:
@@ -40,9 +40,9 @@ class Solution:
             nums.pop(nums.index(val))
 
 
-'''Submission
+"""Submission
 Runtime: 56 ms
-Memory: 12.7 MB'''
+Memory: 12.7 MB"""
 
 
 class Solution_2:
@@ -51,6 +51,6 @@ class Solution_2:
             nums.pop(nums.index(val))
 
 
-'''Submission 2
+"""Submission 2
 Runtime: 36 ms, faster than 57.03% of Python3 online submissions for Remove Element.
-Memory Usage: 14 MB, less than 15.48% of Python3 online submissions for Remove Element.'''
+Memory Usage: 14 MB, less than 15.48% of Python3 online submissions for Remove Element."""

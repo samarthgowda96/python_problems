@@ -1,4 +1,4 @@
-'''387. First Unique Character in a String Description
+"""387. First Unique Character in a String Description
 Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
 
 Examples:
@@ -8,7 +8,7 @@ return 0.
 s = "loveleetcode",
 return 2.
 
-Note: You may assume the string contain only lowercase letters.'''
+Note: You may assume the string contain only lowercase letters."""
 
 
 import collections
@@ -23,6 +23,6 @@ class Solution:
         return -1
 
 
-'''Submission
+"""Submission
 Runtime: 72 ms, faster than 92.22% of Python3 online submissions for First Unique Character in a String.
-Memory Usage: 13 MB, less than 100.00% of Python3 online submissions for First Unique Character in a String.'''
+Memory Usage: 13 MB, less than 100.00% of Python3 online submissions for First Unique Character in a String."""

@@ -1,4 +1,4 @@
-'''852. Peak Index in a Mountain Array Description
+"""852. Peak Index in a Mountain Array Description
 
 Let's call an array A a mountain if the following properties hold:
 
@@ -17,15 +17,15 @@ Output: 1
 Note:
 3 <= A.length <= 10000
 0 <= A[i] <= 10^6
-A is a mountain, as defined above.'''
+A is a mountain, as defined above."""
 
 
 class Solution:
     def peakIndexInMountainArray(self, A: [int]) -> int:
         for i in range(len(A)):
-            if A[i] > A[i+1]:
+            if A[i] > A[i + 1]:
                 return i
 
 
-'''Runtime: 84 ms, faster than 26.70% of Python3 online submissions for Peak Index in a Mountain Array.
-Memory Usage: 13.9 MB, less than 100.00% of Python3 online submissions for Peak Index in a Mountain Array.'''
+"""Runtime: 84 ms, faster than 26.70% of Python3 online submissions for Peak Index in a Mountain Array.
+Memory Usage: 13.9 MB, less than 100.00% of Python3 online submissions for Peak Index in a Mountain Array."""

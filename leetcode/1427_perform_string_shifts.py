@@ -1,4 +1,4 @@
-'''1427. Perform String Shifts Description
+"""1427. Perform String Shifts Description
 You are given a string s containing lowercase English letters, and a matrix shift, where shift[i] = [direction, amount]:
 - direction can be 0 (for left shift) or 1 (for right shift).
 - amount is the amount by which string s is to be shifted.
@@ -29,7 +29,7 @@ s only contains lower case English letters.
 1 <= shift.length <= 100
 shift[i].length == 2
 0 <= shift[i][0] <= 1
-0 <= shift[i][1] <= 100'''
+0 <= shift[i][1] <= 100"""
 
 
 class Solution:
@@ -59,6 +59,6 @@ class Solution:
             return s
 
 
-'''Submission
+"""Submission
 Runtime: 28 ms
-Memory Usage: 13.8 MB'''
+Memory Usage: 13.8 MB"""

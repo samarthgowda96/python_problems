@@ -1,4 +1,4 @@
-'''1365. How Many Numbers Are Smaller Than the Current Number Description
+"""1365. How Many Numbers Are Smaller Than the Current Number Description
 
 Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it.
 That is, for each nums[i] you have to count the number of valid j's such that j != i and nums[j] < nums[i].
@@ -26,7 +26,7 @@ Output: [0,0,0,0]
 Constraints:
 
 2 <= nums.length <= 500
-0 <= nums[i] <= 100'''
+0 <= nums[i] <= 100"""
 
 
 class Solution:
@@ -39,6 +39,6 @@ class Solution:
         return ans
 
 
-'''Submission
+"""Submission
 Runtime: 88 ms, faster than 44.35% of Python3 online submissions for How Many Numbers Are Smaller Than the Current Number.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for How Many Numbers Are Smaller Than the Current Number.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for How Many Numbers Are Smaller Than the Current Number."""

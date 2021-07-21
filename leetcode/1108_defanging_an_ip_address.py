@@ -1,4 +1,4 @@
-'''1108. Defanging an IP Address Description
+"""1108. Defanging an IP Address Description
 
 Given a valid (IPv4) IP address, return a defanged version of that IP address.
 
@@ -13,14 +13,14 @@ Input: address = "255.100.50.0"
 Output: "255[.]100[.]50[.]0"
 
 Constraints:
-The given address is a valid IPv4 address.'''
+The given address is a valid IPv4 address."""
 
 
 class Solution:
     def defangIPaddr(self, address: str) -> str:
-        return address.replace('.', "[.]")
+        return address.replace(".", "[.]")
 
 
-'''Submission
+"""Submission
 Runtime: 32 ms, faster than 14.13% of Python3 online submissions for Defanging an IP Address.
-Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Defanging an IP Address.'''
+Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Defanging an IP Address."""

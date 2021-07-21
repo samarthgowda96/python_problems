@@ -1,4 +1,4 @@
-'''520. Detect Capital Description
+"""520. Detect Capital Description
 
 Given a word, you need to judge whether the usage of capitals in it is right or not.
 
@@ -17,7 +17,7 @@ Example 2:
 Input: "FlaG"
 Output: False
 
-Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.'''
+Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters."""
 
 
 class Solution:
@@ -31,6 +31,6 @@ class Solution:
         return False
 
 
-'''Submission
+"""Submission
 Runtime: 28 ms, faster than 68.14% of Python3 online submissions for Detect Capital.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Detect Capital.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Detect Capital."""

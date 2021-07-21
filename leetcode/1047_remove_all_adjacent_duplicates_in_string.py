@@ -1,4 +1,4 @@
-'''1047. Remove All Adjacent Duplicates In String Description
+"""1047. Remove All Adjacent Duplicates In String Description
 Given a string S of lowercase letters, a duplicate removal consists of choosing two adjacent and equal letters, and removing them.
 
 We repeatedly make duplicate removals on S until we no longer can.
@@ -13,12 +13,12 @@ For example, in "abbaca" we could remove "bb" since the letters are adjacent and
 
 Note:
 1 <= S.length <= 20000
-S consists only of English lowercase letters.'''
+S consists only of English lowercase letters."""
 
 
 class Solution:
     def removeDuplicates(self, S: str) -> str:
-        answer = ''
+        answer = ""
         if len(S) == 0:
             return answer
         string = []
@@ -30,10 +30,10 @@ class Solution:
                 string.pop()
             else:
                 string.append(letter)
-        answer = ''.join(string)
+        answer = "".join(string)
         return answer
 
 
-'''Submission
+"""Submission
 Runtime: 92 ms, faster than 39.68% of Python3 online submissions for Remove All Adjacent Duplicates In String.
-Memory Usage: 12.6 MB, less than 100.00% of Python3 online submissions for Remove All Adjacent Duplicates In String.'''
+Memory Usage: 12.6 MB, less than 100.00% of Python3 online submissions for Remove All Adjacent Duplicates In String."""

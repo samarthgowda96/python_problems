@@ -1,4 +1,4 @@
-'''445. Add Two Numbers II Description
+"""445. Add Two Numbers II Description
 You are given two non-empty linked lists representing two non-negative integers.
 The most significant digit comes first and each of their nodes contain a single digit.
 Add the two numbers and return it as a linked list.
@@ -11,7 +11,7 @@ What if you cannot modify the input lists? In other words, reversing the lists i
 Example:
 
 Input: (7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
-Output: 7 -> 8 -> 0 -> 7'''
+Output: 7 -> 8 -> 0 -> 7"""
 
 
 class ListNode:
@@ -56,6 +56,6 @@ class Solution:
         return submit.next
 
 
-'''Submission
+"""Submission
 Runtime: 80 ms, faster than 26.67% of Python3 online submissions for Add Two Numbers II.
-Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Add Two Numbers II.'''
+Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Add Two Numbers II."""

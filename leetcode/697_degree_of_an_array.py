@@ -1,4 +1,4 @@
-'''697. Degree of an Array Description
+"""697. Degree of an Array Description
 Given a non-empty array of non-negative integers nums, the degree of this array is defined as the maximum frequency of any one of its elements.
 
 Your task is to find the smallest possible length of a (contiguous) subarray of nums, that has the same degree as nums.
@@ -18,7 +18,7 @@ Output: 6
 Note:
 
 nums.length will be between 1 and 50,000.
-nums[i] will be an integer between 0 and 49,999.'''
+nums[i] will be an integer between 0 and 49,999."""
 
 
 import collections
@@ -43,6 +43,6 @@ class Solution:
         return min(answers)
 
 
-'''Submission
+"""Submission
 Runtime: 1056 ms, faster than 9.36% of Python3 online submissions for Degree of an Array.
-Memory Usage: 13.9 MB, less than 81.82% of Python3 online submissions for Degree of an Array.'''
+Memory Usage: 13.9 MB, less than 81.82% of Python3 online submissions for Degree of an Array."""

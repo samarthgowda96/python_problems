@@ -1,4 +1,4 @@
-'''985. Sum of Even Numbers After Queries Description
+"""985. Sum of Even Numbers After Queries Description
 
 We have an array A of integers, and an array queries of queries.
 
@@ -23,7 +23,7 @@ Note:
 -10000 <= A[i] <= 10000
 1 <= queries.length <= 10000
 -10000 <= queries[i][0] <= 10000
-0 <= queries[i][1] < A.length'''
+0 <= queries[i][1] < A.length"""
 
 
 class Solution:
@@ -41,6 +41,6 @@ class Solution:
         return ans
 
 
-'''Submission
+"""Submission
 Runtime: 572 ms, faster than 20.00% of Python3 online submissions for Sum of Even Numbers After Queries.
-Memory Usage: 18.6 MB, less than 5.88% of Python3 online submissions for Sum of Even Numbers After Queries.'''
+Memory Usage: 18.6 MB, less than 5.88% of Python3 online submissions for Sum of Even Numbers After Queries."""

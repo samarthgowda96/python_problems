@@ -1,4 +1,4 @@
-'''81. Search in Rotated Sorted Array II Description
+"""81. Search in Rotated Sorted Array II Description
 Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 
 (i.e., [0,0,1,2,2,5,6] might become [2,5,6,0,0,1,2]).
@@ -16,7 +16,7 @@ Output: false
 Follow up:
 This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.
 Would this affect the run-time complexity? How and why?
-'''
+"""
 
 
 class Solution:
@@ -26,6 +26,6 @@ class Solution:
         return False
 
 
-'''Submission
+"""Submission
 Runtime: 48 ms, faster than 90.70% of Python3 online submissions for Search in Rotated Sorted Array II.
-Memory Usage: 13.2 MB, less than 100.00% of Python3 online submissions for Search in Rotated Sorted Array II.'''
+Memory Usage: 13.2 MB, less than 100.00% of Python3 online submissions for Search in Rotated Sorted Array II."""

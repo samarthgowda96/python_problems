@@ -1,4 +1,4 @@
-'''1207. Unique Number of Occurrences Description
+"""1207. Unique Number of Occurrences Description
 Given an array of integers arr, write a function that returns true if and only if the number of occurrences of each value in the array is unique.
 
 Example 1:
@@ -17,7 +17,7 @@ Output: true
 Constraints:
 1 <= arr.length <= 1000
 -1000 <= arr[i] <= 1000
-'''
+"""
 
 import collections
 
@@ -32,7 +32,7 @@ class Solution:
         return len(counts) == len(set(counts))
 
 
-'''Submission
+"""Submission
 Runtime: 36 ms, faster than 50.55% of Python3 online submissions for Unique Number of Occurrences.
 Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Unique Number of Occurrences.
-'''
+"""

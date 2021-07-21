@@ -1,4 +1,4 @@
-'''49. Group Anagrams Description
+"""49. Group Anagrams Description
 Given an array of strings, group anagrams together.
 
 Example:
@@ -12,7 +12,7 @@ Output:
 
 Note:
 All inputs will be in lowercase.
-The order of your output does not matter.'''
+The order of your output does not matter."""
 
 
 class Solution:
@@ -26,6 +26,6 @@ class Solution:
         return words.values()
 
 
-'''Submission
+"""Submission
 Runtime: 116 ms, faster than 54.79 of Python3 online submissions for Group Anagrams.
-Memory Usage: 17.5 MB, less than 30.19% of Python3 online submissions for Group Anagrams.'''
+Memory Usage: 17.5 MB, less than 30.19% of Python3 online submissions for Group Anagrams."""

@@ -1,4 +1,4 @@
-'''1103. Distribute Candies to People Description
+"""1103. Distribute Candies to People Description
 We distribute some number of candies, to a row of n = num_people people in the following way:
 
 We then give 1 candy to the first person, 2 candies to the second person, and so on until we give n candies to the last person.
@@ -31,7 +31,7 @@ Constraints:
 
 1 <= candies <= 10^9
 1 <= num_people <= 1000
-'''
+"""
 
 
 class Solution:
@@ -49,6 +49,6 @@ class Solution:
                     return array
 
 
-'''Submission
+"""Submission
 Runtime: 32 ms, faster than 80.97% of Python3 online submissions for Distribute Candies to People.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Distribute Candies to People.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Distribute Candies to People."""

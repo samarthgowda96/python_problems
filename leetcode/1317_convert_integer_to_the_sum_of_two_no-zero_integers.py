@@ -1,4 +1,4 @@
-'''1317. Convert Integer to the Sum of Two No-Zero Integers Description
+"""1317. Convert Integer to the Sum of Two No-Zero Integers Description
 Given an integer n. No-Zero integer is a positive integer which doesn't contain any 0 in its decimal representation.
 
 Return a list of two integers [A, B] where:
@@ -26,16 +26,16 @@ Output: [1,68]
 
 Example 5:
 Input: n = 1010
-Output: [11,999]'''
+Output: [11,999]"""
 
 
 class Solution:
     def getNoZeroIntegers(self, n: int) -> [int]:
         for i in range(1, n):
-            if '0' not in str(i) and '0' not in str(n-i):
-                return [i, n-i]
+            if "0" not in str(i) and "0" not in str(n - i):
+                return [i, n - i]
 
 
-'''Submission
+"""Submission
 Runtime: 28 ms, faster than 67.40% of Python3 online submissions for Convert Integer to the Sum of Two No-Zero Integers.
-Memory Usage: 14 MB, less than 100.00% of Python3 online submissions for Convert Integer to the Sum of Two No-Zero Integers.'''
+Memory Usage: 14 MB, less than 100.00% of Python3 online submissions for Convert Integer to the Sum of Two No-Zero Integers."""

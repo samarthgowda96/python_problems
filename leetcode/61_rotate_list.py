@@ -1,4 +1,4 @@
-'''61. Rotate List Description
+"""61. Rotate List Description
 Given a linked list, rotate the list to the right by k places, where k is non-negative.
 
 Example 1:
@@ -15,7 +15,7 @@ Explanation:
 rotate 1 steps to the right: 2->0->1->NULL
 rotate 2 steps to the right: 1->2->0->NULL
 rotate 3 steps to the right: 0->1->2->NULL
-rotate 4 steps to the right: 2->0->1->NULL'''
+rotate 4 steps to the right: 2->0->1->NULL"""
 
 
 class ListNode:
@@ -50,6 +50,6 @@ class Solution:
         return head
 
 
-'''Submission
+"""Submission
 Runtime: 48 ms, faster than 14.76% of Python3 online submissions for Rotate List.
-Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Rotate List.'''
+Memory Usage: 12.9 MB, less than 100.00% of Python3 online submissions for Rotate List."""

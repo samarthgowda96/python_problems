@@ -1,4 +1,4 @@
-'''136. Single Number Description
+"""136. Single Number Description
 Given a non-empty array of integers, every element appears twice except for one. Find that single one.
 
 Note:
@@ -10,7 +10,7 @@ Output: 1
 
 Example 2:
 Input: [4,1,2,1,2]
-Output: 4'''
+Output: 4"""
 
 import collections
 
@@ -24,6 +24,6 @@ class Solution:
                 return num
 
 
-'''Submission:
+"""Submission:
 Runtime: 80ms
-Memory usage: 16MB'''
+Memory usage: 16MB"""

@@ -1,4 +1,4 @@
-'''189. Rotate Array Description
+"""189. Rotate Array Description
 Given an array, rotate the array to the right by k steps, where k is non-negative.
 
 Example 1:
@@ -19,7 +19,7 @@ rotate 2 steps to the right: [3,99,-1,-100]
 Note:
 Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.
 Could you do it in-place with O(1) extra space?
-'''
+"""
 
 
 class Solution:
@@ -31,7 +31,7 @@ class Solution:
         nums[k:], nums[:k] = nums[:-k], nums[-k:]
 
 
-'''Submissions
+"""Submissions
 Runtime: 72 ms, faster than 28.56% of Python3 online submissions for Rotate Array.
 Memory Usage: 14.1 MB, less than 5.09% of Python3 online submissions for Rotate Array.
-'''
+"""

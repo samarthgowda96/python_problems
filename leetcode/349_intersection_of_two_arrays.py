@@ -1,4 +1,4 @@
-'''349. Intersection of Two Arrays Description
+"""349. Intersection of Two Arrays Description
 
 Given two arrays, write a function to compute their intersection.
 
@@ -12,7 +12,7 @@ Output: [9,4]
 
 Note:
 Each element in the result must be unique.
-The result can be in any order.'''
+The result can be in any order."""
 
 
 class Solution:
@@ -28,6 +28,6 @@ class Solution:
         return intersection
 
 
-'''Submission
+"""Submission
 Runtime: 44 ms, faster than 72.07% of Python3 online submissions for Intersection of Two Arrays.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Intersection of Two Arrays.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Intersection of Two Arrays."""

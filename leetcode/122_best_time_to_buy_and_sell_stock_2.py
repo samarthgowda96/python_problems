@@ -1,4 +1,4 @@
-'''122. Best Time to Buy and Sell Stock II Description
+"""122. Best Time to Buy and Sell Stock II Description
 Say you have an array prices for which the ith element is the price of a given stock on day i.
 Design an algorithm to find the maximum profit.
 You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
@@ -24,7 +24,7 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 Constraints:
 1 <= prices.length <= 3 * 10 ^ 4
-0 <= prices[i] <= 10 ^ 4'''
+0 <= prices[i] <= 10 ^ 4"""
 
 
 class Solution:
@@ -45,7 +45,7 @@ class Solution:
             elif prices[i] < local_min:
                 local_min = prices[i]
             elif i + 1 < len(prices):
-                if (prices[i] > prices[i+1]) and (local_min > -1):
+                if (prices[i] > prices[i + 1]) and (local_min > -1):
                     profit += prices[i] - local_min
                     local_min = -1
             elif i == len(prices) - 1:
@@ -55,6 +55,6 @@ class Solution:
         return profit
 
 
-'''Submission
+"""Submission
 Runtime: 68 ms
-Memory Usage: 14.8 MB'''
+Memory Usage: 14.8 MB"""

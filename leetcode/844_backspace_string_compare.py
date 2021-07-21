@@ -1,4 +1,4 @@
-'''844. Backspace String Compare Description
+"""844. Backspace String Compare Description
 Given two strings S and T, return if they are equal when both are typed into empty text editors. # means a backspace character.
 
 Example 1:
@@ -27,13 +27,13 @@ Note:
 S and T only contain lowercase letters and '#' characters.
 
 Follow up:
-Can you solve it in O(N) time and O(1) space?'''
+Can you solve it in O(N) time and O(1) space?"""
 
 
 class Solution:
     def backspaceCompare(self, S: str, T: str) -> bool:
-        clean_s = ''
-        clean_t = ''
+        clean_s = ""
+        clean_t = ""
         for letter in S:
             if letter != "#":
                 clean_s += letter
@@ -47,6 +47,6 @@ class Solution:
         return clean_s == clean_t
 
 
-'''Submission
+"""Submission
 Runtime: 28 ms, faster than 70.48% of Python3 online submissions for Backspace String Compare.
-Memory Usage: 12.6 MB, less than 100.00% of Python3 online submissions for Backspace String Compare.'''
+Memory Usage: 12.6 MB, less than 100.00% of Python3 online submissions for Backspace String Compare."""

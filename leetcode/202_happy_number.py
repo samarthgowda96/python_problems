@@ -1,4 +1,4 @@
-'''202. Happy Number Description
+"""202. Happy Number Description
 Write an algorithm to determine if a number n is "happy".
 A happy number is a number defined by the following process:
 Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1.
@@ -12,7 +12,7 @@ Explanation:
 12 + 92 = 82
 82 + 22 = 68
 62 + 82 = 100
-12 + 02 + 02 = 1'''
+12 + 02 + 02 = 1"""
 
 
 class Solution:
@@ -31,6 +31,6 @@ class Solution:
         return True
 
 
-'''Submission
+"""Submission
 Runtime: 28 ms
-Memory Usage: 13.9 MB'''
+Memory Usage: 13.9 MB"""

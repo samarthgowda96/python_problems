@@ -1,4 +1,4 @@
-'''896. Monotonic Array Description
+"""896. Monotonic Array Description
 An array is monotonic if it is either monotone increasing or monotone decreasing.
 
 An array A is monotone increasing if for all i <= j, A[i] <= A[j].  An array A is monotone decreasing if for all i <= j, A[i] >= A[j].
@@ -28,7 +28,7 @@ Output: true
 Note:
 1 <= A.length <= 50000
 -100000 <= A[i] <= 100000
-'''
+"""
 
 from collections import OrderedDict
 
@@ -47,14 +47,14 @@ class Solution:
         monotone = True
         for i in range(len(A) - 1):
             if increasing:
-                monotone = monotone and A[i] <= A[i+1]
+                monotone = monotone and A[i] <= A[i + 1]
             else:
-                monotone = monotone and A[i] >= A[i+1]
+                monotone = monotone and A[i] >= A[i + 1]
 
         return monotone
 
 
-'''Submissions
+"""Submissions
 Runtime: 524 ms, faster than 54.26% of Python3 online submissions for Monotonic Array.
 Memory Usage: 18.7 MB, less than 5.26% of Python3 online submissions for Monotonic Array.
-'''
+"""

@@ -1,4 +1,4 @@
-'''345. Reverse Vowels of a String
+"""345. Reverse Vowels of a String
 Write a function that takes a string as input and reverse only the vowels of a string.
 
 Example 1:
@@ -10,14 +10,14 @@ Input: "leetcode"
 Output: "leotcede"
 
 Note:
-The vowels does not include the letter "y".'''
+The vowels does not include the letter "y"."""
 
 
 class Solution:
     def reverseVowels(self, s: str) -> str:
-        vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+        vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
         if not s:
-            return ''
+            return ""
         split_string = []
         list_of_vowels = []
         for letter in s:
@@ -28,7 +28,7 @@ class Solution:
                 split_string.append(letter)
 
         list_of_vowels = list_of_vowels[::-1]  # reverse the list
-        final = ''
+        final = ""
         for letter in split_string:
             if letter:
                 final += letter
@@ -38,6 +38,6 @@ class Solution:
         return final
 
 
-'''Submission
+"""Submission
 Runtime: 184 ms, faster than 6.02% of Python3 online submissions for Reverse Vowels of a String.
-Memory Usage: 15.4 MB, less than 27.92% of Python3 online submissions for Reverse Vowels of a String.'''
+Memory Usage: 15.4 MB, less than 27.92% of Python3 online submissions for Reverse Vowels of a String."""

@@ -1,4 +1,4 @@
-'''13. Roman to Integer
+"""13. Roman to Integer
 Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
 Symbol       Value
@@ -43,22 +43,24 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 Constraints:
 1 <= s.length <= 15
 s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
-It is guaranteed that s is a valid roman numeral in the range [1, 3999].'''
+It is guaranteed that s is a valid roman numeral in the range [1, 3999]."""
 
 
 class Solution:
     def romanToInt(self, s: str) -> int:
-        roman = ['I', 'V', 'X', 'L', 'C', 'D', 'M']
+        roman = ["I", "V", "X", "L", "C", "D", "M"]
         values = [1, 5, 10, 50, 100, 500, 1000]
         final = 0
         # numbers are usually written largest to smallest from left to right
-        '''solution: iterate from left to right. If index of current character is < index of next character, value is negative.
+        """solution: iterate from left to right. If index of current character is < index of next character, value is negative.
         Otherwise, value is positive. Add these negative and positive values to sum and return it.
-        '''
+        """
 
         # iterate through each letter in string s
-        for i in range(len(s) - 1):  # subtract 1 because we are comparing two values; avoid index error
-            if roman.index(s[i]) >= roman.index(s[i+1]):
+        for i in range(
+            len(s) - 1
+        ):  # subtract 1 because we are comparing two values; avoid index error
+            if roman.index(s[i]) >= roman.index(s[i + 1]):
                 final += values[roman.index(s[i])]
             else:
                 final -= values[roman.index(s[i])]
@@ -68,6 +70,6 @@ class Solution:
         return final
 
 
-'''Submission
+"""Submission
 Runtime: 52 ms, faster than 48.06% of Python3 online submissions for Roman to Integer.
-Memory Usage: 14.3 MB, less than 57.71% of Python3 online submissions for Roman to Integer.'''
+Memory Usage: 14.3 MB, less than 57.71% of Python3 online submissions for Roman to Integer."""

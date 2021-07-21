@@ -1,4 +1,4 @@
-'''1295. Find Numbers with Even Number of Digits Description
+"""1295. Find Numbers with Even Number of Digits Description
 Given an array nums of integers, return how many of them contain an even number of digits.
 
 Example 1:
@@ -21,7 +21,7 @@ Only 1771 contains an even number of digits.
 Constraints:
 1 <= nums.length <= 500
 1 <= nums[i] <= 10^5
-'''
+"""
 
 
 class Solution:
@@ -33,7 +33,7 @@ class Solution:
         return count
 
 
-'''Submissions
+"""Submissions
 Runtime: 56 ms, faster than 38.57% of Python3 online submissions for Find Numbers with Even Number of Digits.
 Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Find Numbers with Even Number of Digits.
-'''
+"""

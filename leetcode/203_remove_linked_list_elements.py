@@ -1,9 +1,9 @@
-'''203. Remove Linked List Elements Description
+"""203. Remove Linked List Elements Description
 Remove all elements from a linked list of integers that have value val.
 
 Example:
 Input:  1->2->6->3->4->5->6, val = 6
-Output: 1->2->3->4->5'''
+Output: 1->2->3->4->5"""
 
 
 # Definition for singly-linked list.
@@ -26,6 +26,6 @@ class Solution:
         return final.next
 
 
-'''Submission
+"""Submission
 Runtime: 52 ms, faster than 99.76% of Python3 online submissions for Remove Linked List Elements.
-Memory Usage: 15.6 MB, less than 100.00% of Python3 online submissions for Remove Linked List Elements.'''
+Memory Usage: 15.6 MB, less than 100.00% of Python3 online submissions for Remove Linked List Elements."""

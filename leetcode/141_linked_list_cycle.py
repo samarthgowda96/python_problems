@@ -1,4 +1,4 @@
-'''141. Linked List Cycle Description
+"""141. Linked List Cycle Description
 
 Given a linked list, determine if it has a cycle in it.
 
@@ -18,7 +18,7 @@ Explanation: There is a cycle in the linked list, where tail connects to the fir
 Example 3:
 Input: head = [1], pos = -1
 Output: false
-Explanation: There is no cycle in the linked list.'''
+Explanation: There is no cycle in the linked list."""
 
 
 # Definition for singly-linked list.
@@ -32,7 +32,7 @@ class Solution:
     def hasCycle(self, head: ListNode) -> bool:
         if head is None:
             return False
-        while (head):
+        while head:
             if head.val is None:
                 return True
             head.val = None
@@ -40,6 +40,6 @@ class Solution:
         return False
 
 
-'''Submission
+"""Submission
 Runtime: 44 ms, faster than 85.80% of Python3 online submissions for Linked List Cycle.
-Memory Usage: 15.8 MB, less than 100.00% of Python3 online submissions for Linked List Cycle.'''
+Memory Usage: 15.8 MB, less than 100.00% of Python3 online submissions for Linked List Cycle."""

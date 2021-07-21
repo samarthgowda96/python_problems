@@ -1,4 +1,4 @@
-'''1342. Number of Steps to Reduce a Number to Zero Description
+"""1342. Number of Steps to Reduce a Number to Zero Description
 
 Given a non-negative integer num, return the number of steps to reduce it to zero.
 If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it.
@@ -29,7 +29,7 @@ Output: 12
 
 
 Constraints:
-0 <= num <= 10^6'''
+0 <= num <= 10^6"""
 
 
 class Solution:
@@ -45,6 +45,6 @@ class Solution:
         return steps
 
 
-'''Submission
+"""Submission
 Runtime: 28 ms, faster than 62.08% of Python3 online submissions for Number of Steps to Reduce a Number to Zero.
-Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Number of Steps to Reduce a Number to Zero.'''
+Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Number of Steps to Reduce a Number to Zero."""

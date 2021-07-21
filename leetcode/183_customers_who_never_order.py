@@ -1,4 +1,4 @@
-'''183. Customers Who Never Order
+"""183. Customers Who Never Order
 Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything.
 
 Table: Customers.
@@ -26,12 +26,12 @@ Using the above tables as example, return the following:
 | Henry     |
 | Max       |
 +-----------+
-'''
+"""
 
 # Write your MySQL query statement below
 # SELECT Name AS Customers FROM Customers WHERE id not in (SELECT CustomerId FROM Orders);
 
-'''Submission
+"""Submission
 Runtime: 631 ms, faster than 76.76% of MySQL online submissions for Customers Who Never Order.
 Memory Usage: 0B, less than 100.00% of MySQL online submissions for Customers Who Never Order.
-'''
+"""

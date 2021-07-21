@@ -1,4 +1,4 @@
-'''380. Insert Delete GetRandom O(1)
+"""380. Insert Delete GetRandom O(1)
 Design a data structure that supports all following operations in average O(1) time.
 
 insert(val): Inserts an item val to the set if not already present.
@@ -28,14 +28,13 @@ randomSet.remove(1);
 randomSet.insert(2);
 
 // Since 2 is the only number in the set, getRandom always return 2.
-randomSet.getRandom();'''
+randomSet.getRandom();"""
 
 
 from random import randrange
 
 
 class RandomizedSet:
-
     def __init__(self):
         """
         Initialize your data structure here.
@@ -50,7 +49,6 @@ class RandomizedSet:
             self.myset.add(val)
             return True
         return False
-        
 
     def remove(self, val: int) -> bool:
         """
@@ -67,7 +65,6 @@ class RandomizedSet:
         """
         for _ in range(len(self.myset)):
             return list(self.myset)[randrange(len(self.myset))]
-        
 
 
 # Your RandomizedSet object will be instantiated and called as such:
@@ -77,6 +74,6 @@ class RandomizedSet:
 # param_3 = obj.getRandom()
 
 
-'''Submission
+"""Submission
 Runtime: 436 ms, faster than 20.04% of Python3 online submissions for Insert Delete GetRandom O(1).
-Memory Usage: 18.2 MB, less than 13.66% of Python3 online submissions for Insert Delete GetRandom O(1).'''
+Memory Usage: 18.2 MB, less than 13.66% of Python3 online submissions for Insert Delete GetRandom O(1)."""

@@ -1,4 +1,4 @@
-'''941. Valid Mountain Array
+"""941. Valid Mountain Array
 Given an array A of integers, return true if and only if it is a valid mountain array.
 Recall that A is a mountain array if and only if:
 - A.length >= 3
@@ -20,7 +20,7 @@ Output: true
 
 Note:
 0 <= A.length <= 10000
-0 <= A[i] <= 10000'''
+0 <= A[i] <= 10000"""
 
 
 class Solution:
@@ -35,16 +35,16 @@ class Solution:
 
         for i in range(len(A) - 1):
             # not strictly increasing
-            if A[i] == A[i+1]:
+            if A[i] == A[i + 1]:
                 return False
             # initialize inc bool to be True
-            elif A[i] < A[i+1] and dec:
+            elif A[i] < A[i + 1] and dec:
                 return False
             # if the array starts decreasing
-            elif A[i] > A[i+1]:
+            elif A[i] > A[i + 1]:
                 dec = True
             # if the array has already decreased, it shouldn't increase again
-            elif dec and A[i] < A[i+1]:
+            elif dec and A[i] < A[i + 1]:
                 return False
 
         if not dec:
@@ -52,9 +52,9 @@ class Solution:
         return True
 
 
-'''Submission
+"""Submission
 Runtime: 432 ms
-Memory: 15 MB'''
+Memory: 15 MB"""
 
 
 class Solution2:
@@ -63,20 +63,20 @@ class Solution2:
         i = 0
 
         # walk up
-        while i+1 < n and A[i] < A[i+1]:
+        while i + 1 < n and A[i] < A[i + 1]:
             i += 1
 
         # peak can't be first or last
-        if i == 0 or i == n-1:
+        if i == 0 or i == n - 1:
             return False
 
         # walk down
-        while i+1 < n and A[i] > A[i+1]:
+        while i + 1 < n and A[i] > A[i + 1]:
             i += 1
 
-        return i == n-1
+        return i == n - 1
 
 
-'''Submission
+"""Submission
 Runtime: 212 ms, faster than 92.76% of Python3 online submissions for Valid Mountain Array.
-Memory Usage: 15.1 MB, less than 10.80% of Python3 online submissions for Valid Mountain Array.'''
+Memory Usage: 15.1 MB, less than 10.80% of Python3 online submissions for Valid Mountain Array."""

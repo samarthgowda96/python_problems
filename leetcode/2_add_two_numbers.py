@@ -1,4 +1,4 @@
-'''2. Add Two Numbers Description
+"""2. Add Two Numbers Description
 
 You are given two non-empty linked lists representing two non-negative integers.
 The digits are stored in reverse order and each of their nodes contain a single digit.
@@ -10,7 +10,7 @@ Example:
 
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
-Explanation: 342 + 465 = 807.'''
+Explanation: 342 + 465 = 807."""
 
 
 class ListNode:
@@ -53,9 +53,9 @@ class Solution:
         return final.next
 
 
-'''Submission 1
+"""Submission 1
 Runtime: 76 ms, faster than 30.02% of Python3 online submissions for Add Two Numbers.
-Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Add Two Numbers.'''
+Memory Usage: 12.7 MB, less than 100.00% of Python3 online submissions for Add Two Numbers."""
 
 
 class Solution2:
@@ -98,6 +98,6 @@ class Solution2:
         return final.next
 
 
-'''Submission 2
+"""Submission 2
 Runtime: 68 ms, faster than 73.86% of Python3 online submissions for Add Two Numbers.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Add Two Numbers.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Add Two Numbers."""

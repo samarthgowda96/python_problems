@@ -1,4 +1,4 @@
-'''1313. Decompress Run-Length Encoded List Description
+"""1313. Decompress Run-Length Encoded List Description
 We are given a list nums of integers representing a list compressed with run-length encoding.
 
 Consider each adjacent pair of elements [a, b] = [nums[2*i], nums[2*i+1]] (with i >= 0).  For each such pair, there are a elements with value b in the decompressed list.
@@ -18,7 +18,7 @@ Constraints:
 2 <= nums.length <= 100
 nums.length % 2 == 0
 1 <= nums[i] <= 100
-'''
+"""
 
 
 class Solution:
@@ -33,7 +33,7 @@ class Solution:
         return my_list
 
 
-'''Submissions
+"""Submissions
 Runtime: 64 ms, faster than 84.45% of Python3 online submissions for Decompress Run-Length Encoded List.
 Memory Usage: 13.1 MB, less than 100.00% of Python3 online submissions for Decompress Run-Length Encoded List.
-'''
+"""

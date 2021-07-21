@@ -1,4 +1,4 @@
-'''205. Isomorphic Strings
+"""205. Isomorphic Strings
 Given two strings s and t, determine if they are isomorphic.
 
 Two strings are isomorphic if the characters in s can be replaced to get t.
@@ -19,7 +19,7 @@ Input: s = "paper", t = "title"
 Output: true
 
 Note:
-You may assume both s and t have the same length.'''
+You may assume both s and t have the same length."""
 
 
 class Solution:
@@ -38,6 +38,6 @@ class Solution:
         return True
 
 
-'''Submission
+"""Submission
 Runtime: 212 ms, faster than 5.53% of Python3 online submissions for Isomorphic Strings.
-Memory Usage: 14 MB, less than 51.46% of Python3 online submissions for Isomorphic Strings.'''
+Memory Usage: 14 MB, less than 51.46% of Python3 online submissions for Isomorphic Strings."""

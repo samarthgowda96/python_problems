@@ -1,10 +1,10 @@
-'''21. Merge Two Sorted Lists Description
+"""21. Merge Two Sorted Lists Description
 
 Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
 
 Example:
 Input: 1->2->4, 1->3->4
-Output: 1->1->2->3->4->4'''
+Output: 1->1->2->3->4->4"""
 
 
 # Definition for singly-linked list.
@@ -43,6 +43,6 @@ class Solution:
         return root.next
 
 
-'''Submission
+"""Submission
 Runtime: 40 ms, faster than 17.56% of Python3 online submissions for Merge Two Sorted Lists.
-Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Merge Two Sorted Lists.'''
+Memory Usage: 12.8 MB, less than 100.00% of Python3 online submissions for Merge Two Sorted Lists."""

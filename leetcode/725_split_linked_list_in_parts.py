@@ -1,4 +1,4 @@
-'''725. Split Linked List in Parts Description
+"""725. Split Linked List in Parts Description
 
 Given a (singly) linked list with head node root, write a function to split the linked list into k consecutive linked list "parts".
 
@@ -28,7 +28,7 @@ Note:
 
 The length of root will be in the range [0, 1000].
 Each value of a node in the input will be an integer in the range [0, 999].
-k will be an integer in the range [1, 50].'''
+k will be an integer in the range [1, 50]."""
 
 
 # Definition for singly-linked list.
@@ -42,7 +42,7 @@ class Solution:
     def splitListToParts(self, root: ListNode, k: int) -> [ListNode]:
         count = root
         length = 0
-        while (count):
+        while count:
             length += 1
             count = count.next
 
@@ -68,6 +68,6 @@ class Solution:
         return final
 
 
-'''Submission
+"""Submission
 Runtime: 36 ms, faster than 69.75% of Python3 online submissions for Split Linked List in Parts.
-Memory Usage: 13.1 MB, less than 100.00% of Python3 online submissions for Split Linked List in Parts.'''
+Memory Usage: 13.1 MB, less than 100.00% of Python3 online submissions for Split Linked List in Parts."""
