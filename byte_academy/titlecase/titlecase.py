@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def titlecase(title, exceptions):
     words = title.split(" ")
     formatted_title = []
@@ -12,7 +13,7 @@ def titlecase(title, exceptions):
 
 
 if __name__ == "__main__":
-    #test cases
+    # test cases
     print(titlecase("byte academy is the best", "is, the"))
     exceptions = ["jumps", "the", "over"]
     print(titlecase("the quick brown fox jumps over the lazy dog", exceptions))
