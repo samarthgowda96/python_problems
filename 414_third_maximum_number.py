@@ -26,7 +26,7 @@ Follow up: Can you find an O(n) solution?"""
 
 
 class Solution:
-    def thirdMax(self, nums: List[int]) -> int:
+    def thirdMax(self, nums: [bool]) -> int:
         nums = sorted(set(nums))
 
         if len(nums) > 2:

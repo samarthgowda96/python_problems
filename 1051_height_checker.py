@@ -35,7 +35,7 @@ Constraints:
 
 
 class Solution:
-    def heightChecker(self, heights: List[int]) -> int:
+    def heightChecker(self, heights: [int]) -> int:
         sorted_heights = sorted(heights)
         final = 0
 
