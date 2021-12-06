@@ -1,4 +1,4 @@
-f = open("puzzle_1_input.txt", "r")
+f = open("input.txt", "r")
 
 nums = f.readlines()
 nums = [int(i) for i in nums]
