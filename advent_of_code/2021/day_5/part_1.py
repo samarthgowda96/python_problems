@@ -9,10 +9,6 @@ for i in range(len(lines)):
 for i in range(len(lines)):
     lines[i] = [x.split(",") for x in lines[i]]
 
-for line in lines:
-    if line[0][0] != line[1][0] and line[0][1] != line[1][1]:
-        lines.remove(line)
-
 # initialize a blank grid with zeros
 matrix = [[0] * 1000 for _ in range(1000)]
 coordinates = []
