@@ -1,5 +1,3 @@
-import numpy as np
-
 f = open("input.txt", "r")
 lantern_fish = [int(x) for x in f.readlines()[0].split(",")]
 
