@@ -5,18 +5,31 @@ directions = f.readlines()[0]
 matrix = [[0] * 1000 for _ in range(1000)]
 i = 500
 j = 500
-matrix[i][j] += 1
+robo_i = 500
+robo_j = 500
+matrix[i][j] += 2  # both Santa and robo-Santa visit
 
-for dir in directions:
-    if dir == "^":
-        j += 1
-    elif dir == ">":
-        i += 1
-    elif dir == "<":
-        i -= 1
+for i in range(len(directions)):
+    if i % 2 == 0:
+        if directions[i] == "^":
+            j += 1
+        elif directions[i] == ">":
+            i += 1
+        elif directions[i] == "<":
+            i -= 1
+        else:
+            j -= 1
+        matrix[i][j] += 1
     else:
-        j -= 1
-    matrix[i][j] += 1
+        if directions[i] == "^":
+            robo_j += 1
+        elif directions[i] == ">":
+            robo_i += 1
+        elif directions[i] == "<":
+            robo_i -= 1
+        else:
+            robo_j -= 1
+        matrix[robo_i][robo_j] += 1
 
 total = 0
 for row in matrix:
