@@ -1,19 +1,15 @@
-from collections import Counter
-
 f = open("input.txt", "r")
 
 pos = [int(x) for x in f.readlines()[0].split(",")]
+pos_set = list(set(pos))
 
-print(sum(pos) / len(pos))
+fuel_possibilities = []
 
-c = Counter(pos)
-majority_crabs_idx = 360
+for i in range(max(pos_set)):
+    fuel = 0
+    for position in pos:
+        if position != i:
+            fuel += abs(position - i)
+    fuel_possibilities.append(fuel)
 
-
-fuel = 0
-for position in c:
-    if position != majority_crabs_idx:
-        fuel += abs(position - majority_crabs_idx) * c[position]
-        # print(fuel, position, c[position])
-
-# print(fuel)
+print(min(fuel_possibilities))
