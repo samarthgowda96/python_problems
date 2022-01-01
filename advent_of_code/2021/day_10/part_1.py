@@ -6,7 +6,6 @@ closing_brackets = [")", "]", "}", ">"]
 
 my_stack = []
 total = 0
-corrupt = False
 
 for line in lines:
     for char in line:
@@ -25,7 +24,6 @@ for line in lines:
                     total += 1197
                 else:
                     total += 25137
-                corrupt = True
                 break
 
 print(total)
